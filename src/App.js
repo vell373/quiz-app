@@ -37,7 +37,10 @@ function App() {
           explanation
         }));
 
-        setQuestions(parsedData);
+        const shuffledQuestions = shuffleArray(parsedData); // 問題のランダム化
+        setQuestions(shuffledQuestions);
+        setCurrentQuestionIndex(Math.floor(Math.random() * shuffledQuestions.length)); // 初回の問題をランダム化
+
       } catch (error) {
         console.error('Failed to load questions:', error);
       }
@@ -45,6 +48,10 @@ function App() {
 
     fetchQuestions();
   }, []);
+
+  const shuffleArray = (array) => {
+    return array.sort(() => Math.random() - 0.5);
+  };
 
   const handleStartQuiz = () => {
     setScreen('quiz');
