@@ -1,0 +1,39 @@
+[
+    {
+    "id": 1,
+    "question": "2+2は？",
+    "choices": [
+        { "label": "A", "text": "3" },
+        { "label": "B", "text": "4" },
+        { "label": "C", "text": "5" },
+        { "label": "D", "text": "6" },
+        { "label": "E", "text": "7" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "2+2=4"
+    },
+    {
+    "id": 2,
+    "question": "1+1は？",
+    "choices": [
+        { "label": "A", "text": "2" },
+        { "label": "B", "text": "3" },
+        { "label": "C", "text": "4" },
+        { "label": "D", "text": "5" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "1+1=2"
+    },
+        {
+    "id": 3,
+    "question": "素数は？",
+    "choices": [
+        { "label": "A", "text": "2" },
+        { "label": "B", "text": "3" },
+        { "label": "C", "text": "4" },
+        { "label": "D", "text": "5" }
+    ],
+    "correctAnswer": ["A", "B", "D"],
+    "explanation": "素数は、1より大きい自然数のうち、1とその数でしか割り切れないもの"
+    }
+]
